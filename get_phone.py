@@ -2,10 +2,6 @@ import os
 import time
 import datetime
 
-# 079086001094|BUI QUOC ANH|1986-10-11|0|163298720202401368|<1<00<<0909330233
-# 212719132|PHAM VAN THIEU|1998-07-01|0|163131983101271543|<0<00<<0981671679
-
-
 qr = input("***** Quet thu ma QR *****" '\n')
 print('***** Quet thanh cong... Start... *****')
 for qr_ in qr:
