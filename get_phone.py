@@ -14,14 +14,14 @@ for qr_ in qr:
 	name_nv = qr_[:-50]
 	datetime_object = datetime.datetime.now()
 	time= datetime_object.strftime(str("%d/%m/%Y, %H:%M:%S"))
-	if not os.path.isfile('sdt_nv.txt'):
-		print('Creating "sdt_nv.txt"...')
-		with open('sdt_nv.txt', mode='a') as nv_file:
+	if not os.path.isfile('check_phone.txt'):
+		print('Creating "check_phone.txt"...')
+		with open('check_phone.txt', mode='a') as nv_file:
 		 	# nv_file.write(read_ + name_nv + '\n')
 		 	nv_file.write(read_ + '\n')
 		 	nv_file.close()
 	else:
-		with open('sdt_nv.txt', mode='a') as nv_file:
+		with open('check_phone.txt', mode='a') as nv_file:
 			# nv_file.write(read_ + name_nv + '\n')
 		 	nv_file.write(read_ + '\n')
 		 	nv_file.close()
@@ -29,16 +29,3 @@ for qr_ in qr:
 	print('****** QUET MA THANH CONG XIN CAM ON! ******')
 	print('******   XIN MOI NHAN VIEN TIEP THEO   ******' '\n')
 	continue
-
-
-
-
-
-
-
-
-
-
-
-
-
